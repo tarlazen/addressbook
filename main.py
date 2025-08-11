@@ -138,7 +138,7 @@ def delete_contact(entries: List[Dict]) -> None:
         save_data(entries)
         print("Kişi silindi.")
     else:
-        print("İşlem iptal edildi.")
+        print("İşlem iptal edilmiştir.")
 
 def pretty_print_full(entries: List[Dict]) -> None:
     for e in entries:
@@ -180,7 +180,7 @@ Seçiminiz: """
             print("Görüşürüz!")
             break
         else:
-            print("Geçersiz seçim, tekrar deneyin.")
+            print("Geçersiz seçim, tekrar deneyin!")
 
 
 if __name__ == "__main__":
