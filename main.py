@@ -115,7 +115,7 @@ def update_contact(entries: List[Dict]) -> None:
     address = input(f"Adres ({person.get('address','')}): ").strip() or person.get('address','')
 
     if email and not validate_email(email):
-        print("Uyarı: e-posta geçersiz, eposta alanı temizlendi.")
+        print("Uyarı: e-posta geçersiz, e-posta alanı temizlenmiştir.")
         email = ""
 
     person.update({"name": name, "phone": phone, "email": email, "address": address})
