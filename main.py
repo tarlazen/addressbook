@@ -46,7 +46,7 @@ def add_contact(entries: List[Dict]) -> None:
         email = ""
 
     if phone and not validate_phone(phone):
-        print("Uyarı: Telefon formatı şüpheli, yine de kaydedilsin mi? (E/h)")
+        print("Uyarı: Telefon formatı doğru olmayabilir, yine de kaydedilsin mi? (E/h)")
         if input().lower() != "e":
             phone = ""
 
