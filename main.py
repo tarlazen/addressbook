@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Basit adres defteri (JSON tabanlı).
-Çalıştırmak için: python adres_defteri.py
-"""
 
 import json
 import os
@@ -184,6 +180,7 @@ Seçiminiz: """
             break
         else:
             print("Geçersiz seçim, tekrar deneyin.")
+
 
 if __name__ == "__main__":
     main_loop()
