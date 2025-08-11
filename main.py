@@ -78,6 +78,7 @@ def find_contacts(entries: List[Dict], term: str) -> List[Dict]:
                or term_lower in e.get('address','').lower()]
     return results
 
+
 def search_contacts(entries: List[Dict]) -> None:
     term = input("Arama terimi (isim/telefon/eposta/adres): ").strip()
     if not term:
@@ -99,13 +100,13 @@ def get_contact_by_id(entries: List[Dict], cid: int) -> Optional[Dict]:
 
 def update_contact(entries: List[Dict]) -> None:
     try:
-        cid = int(input("Güncellenecek kişinin id'si: "))
+        cid = int(input("Güncellenecek kişinin ID'si: "))
     except ValueError:
-        print("Geçersiz id.")
+        print("Geçersiz ID.")
         return
     person = get_contact_by_id(entries, cid)
     if not person:
-        print("Kişi bulunamadı.")
+        print("Kişi bulunamadı! Lütfen kontrol edin.")
         return
     print("Boş bırakırsanız mevcut değer korunur.")
     name = input(f"İsim ({person['name']}): ").strip() or person['name']
